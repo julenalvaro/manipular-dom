@@ -1,0 +1,108 @@
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+
+html, body {
+  height: 100%;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.app-container {
+  width: 100%;
+  height: 100%;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2b3846;
+  height: 54px;
+  width: 100%;
+  box-shadow: 0 2px 3px 0 rgba(0,0,0,0.3);
+}
+
+.logo {
+  margin-left: 16px;
+  width: 36px;
+  height: 36px;
+}
+
+.social {
+  list-style: none;
+  width: 25%;
+  display: flex;
+  justify-content: space-around;
+  
+  a {
+    color: #31ba99;
+    font-size: 32px;
+  }
+}
+
+.wrap {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  padding: 5rem 1rem 0 1rem;
+}
+
+.btn {
+  display: inline-block;
+  outline: none;
+  background: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),0 3px 6px rgba(0, 0, 0, 0.23);
+  transition: box-shadow 0.3s ease-in-out;
+  
+  &:hover {
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  }
+}
+
+.btn-unicorn {
+  border: 3px solid #de99e6;
+  
+}
+.btn-penguin {
+  background: #2b3846;
+  color: #fefefe;
+}
+
+.unicorn-cursor {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🦄</text></svg>")
+      16 0,
+    auto;
+}
+
+.penguin-cursor {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🐧</text></svg>")
+      16 0,
+    auto;
+}
+</style>
+<div class="app-container">
+  <header class="header">
+    <img src="https://res.cloudinary.com/alvarosaburido/image/upload/v1589434245/logo-dark_khpptv.png" alt="" class="logo">
+    <ul class="social">
+      <li class="social__link">
+        <a href="https://github.com/alvarosaburido"><i class="mdi mdi-github-circle"></i></a>
+      </li>
+      <li class="social__link">
+        <a href="http://alvarosaburido.com"><i class="mdi mdi-open-in-app"></i></a>
+      </li>
+    </ul>
+  </header>
+  <div class="content wrap">
+    <button class="btn btn-unicorn unicorn-cursor">I'm an unicorn</button>
+    
+    <button class="btn btn-penguin penguin-cursor">I'm an penguin</button>
+  </div>
+</div>

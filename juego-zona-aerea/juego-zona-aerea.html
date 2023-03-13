@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Juego HTML</title>
+    <style>
+      #cuadrado-azul {
+        width: 100%;
+        height: 100vh;
+        background-color: blue;
+        position: relative;
+      }
+      #cuadrado-rojo {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+
+      #cuadrado-azul:hover {
+        cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='97' height='116' viewport='0 0 100 100' style='fill:black;font-size:58px;'><text y='50%'>🚀</text></svg>") 16 0, auto; /*!emojicursor.app*/;
+      }
+
+
+    </style>
+    <script>
+      document.addEventListener("DOMContentLoaded", function(event) { 
+        var cuadradoRojo = document.getElementById("cuadrado-rojo");
+        cuadradoRojo.addEventListener("mouseover", function(event) {
+          alert("¡La policía te busca!");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="cuadrado-azul">
+      <div id="cuadrado-rojo">
+        <p>Zona aérea restringida</p>
+      </div>
+    </div>
+  </body>
+</html>
